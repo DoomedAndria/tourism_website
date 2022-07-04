@@ -1,0 +1,28 @@
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #dbf1ff;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: #dbf1ff;
+    color: #FF5403;
+}
+#catalog{
+    padding-top: 100px;
+    background-color: #dbf1ff;
+}
+
+#catalog select{
+    padding: 5px;
+    border-radius: 5px;
+    border: #d6792d 2px solid;
+    background-color: #faecb3;
+    cursor: pointer;
+    margin-left: 120px;
+}

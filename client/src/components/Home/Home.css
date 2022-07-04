@@ -1,0 +1,29 @@
+.home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: -1;
+}
+.home video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+.content{
+    width: 240px;
+    height: 260px;
+    border-radius: 125px;
+    background: rgb(163, 198, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content img{
+    width: 400px;
+}

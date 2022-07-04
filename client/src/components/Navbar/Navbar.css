@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+:root{
+    --Lbl: rgb(163, 198, 255);
+    --Lorng: rgb(255, 230, 154);
+    --orng: rgb(255, 206, 67);
+}
+
+nav{
+    position: fixed;
+    background-color: var(--Lbl);
+    border-bottom: 3px solid #ffffff;
+    height: 80px;
+    width: 100%;
+    z-index: 4;
+}
+
+.logo{
+    display: inline-block;
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+ nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+} 
+
+nav ul li .a ,nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border: 2px transparent solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ nav ul li a:focus{
+     text-shadow: 2px 2px 6px #ffffff;
+     border: 2px white solid;
+
+}
+
+nav ul li a:hover{
+    text-shadow: 2px 2px 6px #ffffff;
+    border-bottom: 2px white solid;
+}
+
+
+ul button {
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 15px;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+}
+
+.register{
+    background-color: #2d90d6;
+    color: #fff;
+}
+
+.register:hover,
+.register:focus {
+  background-color: rgb(0, 99, 170);
+}
+
+.signin{
+    background-color: var(--Lorng);
+    color: rgb(226, 150, 10);
+}
+
+.signin:hover,
+.signin:focus {
+  background-color: var(--orng);
+  color: #ffffff;
+}
+
+.hamburger {
+    float: right;
+    display: none;
+    position: relative;
+    z-index: 1;
+
+    margin-top: 25px;
+    margin-right: 25px;
+
+    user-select: none;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: 0.4s;
+
+}
+
+nav select {
+    padding: 5px;
+    border-radius: 5px;
+    border: #2d90d6 2px solid;
+    background-color: #dbf1ff;
+    cursor: pointer;
+}
+
+.hamburger:hover span:nth-child(2){
+    transform: translateX(15px);
+    background-color: var(--orng);
+}
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(3px,-3px) rotate(45deg);
+}
+
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translate(15px,0px)
+}
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(0px,5px) rotate(-45deg);
+}
+
+@media (max-width: 1300px){
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+}
+@media(max-width:1260px){
+    .hamburger{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(113, 149, 209);
+        top :80px;
+        left :-100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+
+    }
+}

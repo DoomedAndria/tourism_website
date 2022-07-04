@@ -1,0 +1,75 @@
+.contact-me{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 60px;
+    width: 100%;
+    height: 90vh;
+    background-color: #dbf1ff;
+    align-items: center;
+    color: #FF5403;
+
+}
+
+.contact-me-container{
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+    background: rgb(163,198,255);
+    background: linear-gradient(230deg, rgba(163,198,255,1) 29%, rgba(255,230,154,1) 100%);
+    border: #2d90d6 2px solid;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.image,.form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form input,.form textarea{
+    width: 70%;
+    height: 30px;
+    border: #2d90d6 2px solid;
+    border-radius: 5px;
+    background-color: #dbf1ff;
+    margin-bottom: 20px;
+}
+
+#message{
+    margin-top: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.form .button{
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    background-color: #2d90d6;
+    color: #fff;
+}
+
+.form .button:hover,
+.form .button:focus{
+    background-color: rgb(0, 99, 170)
+}
+form{
+    margin: 0;
+    padding: 0;
+}
