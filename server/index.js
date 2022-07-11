@@ -6,10 +6,10 @@ const app = express()
 
 
 const db = mysql.createPool({
-    host: 'sql202.epizy.com',
-    user: 'epiz_32148174',
-    password: '6Mct0QWC2u',
-    database: 'epiz_32148174_final_project'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'final_project'
 })
 
 app.use(cors())
